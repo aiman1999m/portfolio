@@ -1,0 +1,34 @@
+body{
+  background-image:url("src/assets/contact.jpg");
+
+
+
+
+
+}
+
+nav {
+  height: 10%;
+
+}
+
+.nav-link{
+  color: white;
+}
+.nav-link.active{
+  color: white;
+}
+
+.navbar-nav{
+  margin-left: 480px;
+
+
+
+}
+a{
+
+  font-size:20px;
+  margin-left: 40px;
+  font-style: italic;
+  margin-top: 10px;
+}
