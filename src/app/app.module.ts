@@ -3,20 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { CONTACTMEComponent } from './contactme/contactme.component';
+
 import {FormsModule} from "@angular/forms";
-import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
+
 import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    CONTACTMEComponent,
-    ProjectsComponent,
-    AboutComponent,
+
     NavComponent
   ],
   imports: [

@@ -1,20 +1,185 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<app-home>
 
-</app-home>
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<app-about>
+</head>
+
+<body>
+<section id="firstpage">
+<app-nav></app-nav>
+
+
+
+  <p class="h3">Hello..</p>
+  <p class="h4">I'm a Full Stack</p>
+  <p class="h5">Web Developer.</p>
+
+  <button class="btn btn-success"  (click)="contact()" > SEND ME  MESSAGE
+    <i class="bi bi-envelope"></i></button>
+
+
+  <a href="https://www.facebook.com/mounir189" target="_blank" class="grey"><i class="bi bi-facebook"> </i></a>
+  <a href="https://www.linkedin.com/in/aimanmounir" target="_blank" class="grey"><i class="bi bi-linkedin"></i></a>
+  <a href="#" class="grey"><i class="bi bi-instagram"></i></a>
+
+
+
+
+</section>
+
+
+<section id="about">
+<app-nav></app-nav>
+
+
+  <div class="container" >
+    <div class="row">
+      <div class="card-header mb-2" >
+        <div class="row g-0">
+          <div class="col-md-3" >
+            <img src="assets/about.jpg" class="img-fluid rounded-start" alt="About">
+          </div>
+          <div class="col-md-9 ">
+            <div class="card-body">
+              <h5 class="card-title">HELLO IT'S AIMAN</h5>
+              <p class="card-text">
+                Hi There ! I'm <strong>Aiman Mounir Idrissi.</strong> A <strong> Full Stack Web Developer</strong> having specialization in <strong> back end & front end development.</strong> I have Backend Skills in Laravel, WordPress, PHP, Python.I also have Frontend Skills in Javascript,NodeJS,Angular,Web Components,CSS,BOOTSTRAP.
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</section>
+
+
+<section id="projects">
   <app-nav></app-nav>
 
-</app-about>
-<app-projects>
-  <app-nav></app-nav>
+  <div class="cards">
+    <article class="card">
+      <header>
 
-</app-projects>
-<app-contactme>
-  <app-nav></app-nav>
+      </header>
+      <img src="assets/angular.png" alt="Angular">
+      <div class="content">
+        <p class="desc"> Angular is a development platform, built on TypeScript. As a platform, Angular includes: A component-based framework for building scalable web applications.</p>
+      </div>
 
-</app-contactme>
+    </article>
+
+
+    <article class="card">
+      <header>
+
+      </header>
+      <img src="assets/django.png" alt="Django">
+      <div class="content">
+        <p class="desc">Django is a high-level Python web framework that enables rapid development of secure and maintainable websites that follows the model–template–views (MTV) architectural pattern. </p>
+      </div>
+
+    </article>
+
+    <article class="card">
+      <header>
+
+      </header>
+      <img src="assets/laravel.png" alt="Laravel">
+      <div class="content">
+        <p class="desc">
+          Laravel is an open-source PHP framework,it's follows a model-view-controller.Laravel reuses the existing components to create a web application.
+        </p>
+      </div>
+
+    </article>
+
+
+
+
+</div>
+
+</section>
+
+<section id="contact">
+<app-nav></app-nav>
+  <div id="Global" >
+    <div id="gauche">
+      <h2 class="ch2">Let's chat.</h2>
+      <h3 class="ch3">Tell me about your  </h3>
+      <h4 class="ch4">project.</h4>
+      <p class="premier">Let's create something together .</p>
+
+
+
+
+    </div>
+    <div id="droite">
+      <div class="card-footer" >
+        <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+          <h1>Send me a message 🚀</h1>
+
+
+          <div class="form-group" >
+
+
+            <input type="text" class="form-control " id="fullname" placeholder="Full name*"
+                   required minlength = '6' maxlength="15"  required [(ngModel)]="fullname" name="fullname">
+          </div>
+
+
+          <div class="form-group">
+
+            <input type="email"  class="form-control" id="email"  placeholder="Email Adress*"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"[(ngModel)]="email" name="email">
+          </div>
+
+          <div class="form-group">
+
+            <input type="text"  class="form-control" id="subject"  placeholder="Subject*"
+                   required minlength = '6' maxlength="15" [(ngModel)] = "subject" name="subject">
+          </div>
+
+
+          <button  class="btn btn-success"   id="btnform" [disabled]="!myForm.form.valid">SEND MESSAGE</button>
+
+
+        </form>
+
+      </div>
+
+
+       </div>
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
 
 
 

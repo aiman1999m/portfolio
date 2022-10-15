@@ -8,10 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'SelfSite';
   public element!: HTMLElement | null;
+  fullname: any;
+  email: any;
+  subject: any;
   constructor() {
   }
 
 
+  onSubmit() {
+
+  }
+
+  contact() {
+    const element = document.getElementById("contact");
 
 
+
+    // @ts-ignore
+    element.scrollIntoView();
+
+
+
+
+  }
 }

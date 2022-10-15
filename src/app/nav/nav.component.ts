@@ -21,18 +21,7 @@ export class NavComponent implements OnInit {
   }
 
 
-  contact() {
-    const element = document.getElementById("contact");
 
-
-
-    // @ts-ignore
-    element.scrollIntoView();
-
-
-
-
-  }
 
   home() {
 
@@ -70,6 +59,18 @@ export class NavComponent implements OnInit {
     element.scrollIntoView();
 
 
+
+
+
+
+  }
+  contact() {
+    const element = document.getElementById("contact");
+
+
+
+    // @ts-ignore
+    element.scrollIntoView();
 
 
 
