@@ -1,6 +1,11 @@
+html
+{
+  display:flex;
+}
 
-
-
+body{
+  background-image: url("src/assets/back.jpg");
+}
 
 
 #firstpage
@@ -15,18 +20,18 @@
   margin-top: 15%;
   font-size: 2vw;
   margin-left: 10%;
-  color: black;
+  color:black;
 }
 
  .h4 {
-  color: grey;
+  color: white;
   font-size: 4vw;
   margin-left: 10%;
  }
 
  .h5 {
   font-size: 4vw;
-  color: grey;
+   color: white;
   margin-left: 10%;
 
 
@@ -74,6 +79,7 @@ a{
   margin-top: 5%;
 }
 .card-header{
+  background-color: white;
   margin-left: 10%;
   margin-top: 15%;
   width: 80%;
@@ -151,6 +157,15 @@ a{
   margin-bottom: 15%;
 
 
+
+}
+#footer{
+
+}
+.copyright{
+  text-align: center;
+  color: black;
+  
 }
 
 .card-footer{
@@ -168,9 +183,11 @@ a{
 
 }
 
+
 h1{
   font-size:3vw ;
   margin-left:3% ;
+  color:black;
 }
 
 #Global
@@ -212,17 +229,18 @@ h1{
 .ch2{
   margin-top: 30%;
   font-size: 2.5vw;
+  color:black;
 }
 .ch3{
-
+  color:black;
   font-size:1.5vw ;
 }
 .ch4{
-
+  color:black;
   font-size:1.5vw ;
 }
 .premier{
-
+color:green;
   font-size: 1vw;
 
 }
