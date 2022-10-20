@@ -8,6 +8,8 @@
 button{
   margin-left: auto;
   font-size: x-large;
+  background-color: #26495c !important;
+  border-color: #26495c!important;
 }
 a{
   font-size: x-large;
@@ -19,7 +21,7 @@ a{
 
 
 .navbar-nav > li > a:hover{
-  color: white;
+  color: #26495c!important;
 }
 
 
